@@ -1,5 +1,5 @@
 function setup(){
-    canvas = createCanvas(600,500)
+    canvas = createCanvas(450,350)
     canvas.center()
     video = createCapture(VIDEO)
     video.hide()
@@ -26,7 +26,7 @@ function preload(){
     img = loadImage("dog_cat.jpg")
 }
 function draw(){
-    image(video,0,0,600,500)
+    image(video,0,0,450,350)
     if(status!= ""){
         objectDetector.detect(video, gotResult)
       for (let i = 0; i < objects.length; i++) {
